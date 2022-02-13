@@ -3,11 +3,11 @@
   <title>ZhangYutong</title>
   
   <subtitle>君子性非异也, 善假于物也</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://zhangyutongdeyonghuming.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2022-02-13T04:12:02.304Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://zhangyutongdeyonghuming.github.io/"/>
+  <updated>2022-02-13T04:29:40.609Z</updated>
+  <id>https://zhangyutongdeyonghuming.github.io/</id>
   
   <author>
     <name>ZhangYutong</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>LeetCode 每日一题1748. 唯一元素的和</title>
-    <link href="http://example.com/2022/02/06/leetcode1748/"/>
-    <id>http://example.com/2022/02/06/leetcode1748/</id>
+    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/06/leetcode1748/"/>
+    <id>https://zhangyutongdeyonghuming.github.io/2022/02/06/leetcode1748/</id>
     <published>2022-02-06T11:22:01.000Z</published>
-    <updated>2022-02-13T04:12:02.304Z</updated>
+    <updated>2022-02-13T04:29:40.609Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/25368dcd8a984141aedbbda3e0a94daf~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">sumOfUnique</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; nums.length ; i ++) &#123;</span><br><span class="line">            map.put(nums[i], map.getOrDefault(nums[i], <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (Map.Entry&lt;Integer, Integer&gt; entry : map.entrySet()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (entry.getValue() == <span class="number">1</span>) &#123;</span><br><span class="line">                sum += entry.getKey();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>思路: 先将数存到 hash 里, 然后遍历值为 1 的 key 相加返回即可</strong></p>]]></content>
     
@@ -33,19 +33,19 @@
     
     
     
-    <category term="LeetCode" scheme="http://example.com/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
     
     
-    <category term="leetcode" scheme="http://example.com/tags/leetcode/"/>
+    <category term="leetcode" scheme="https://zhangyutongdeyonghuming.github.io/tags/leetcode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode每日一题1725. 可以形成最大正方形的矩形数目, 遍历</title>
-    <link href="http://example.com/2022/02/04/leetcode1725/"/>
-    <id>http://example.com/2022/02/04/leetcode1725/</id>
+    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/04/leetcode1725/"/>
+    <id>https://zhangyutongdeyonghuming.github.io/2022/02/04/leetcode1725/</id>
     <published>2022-02-04T06:19:05.000Z</published>
-    <updated>2022-02-13T03:07:10.588Z</updated>
+    <updated>2022-02-13T04:29:38.366Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ed24e19204841f59ea20b6ae5e0344e~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">countGoodRectangles</span><span class="params">(<span class="type">int</span>[][] rectangles)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> Math.min(rectangles[<span class="number">0</span>][<span class="number">0</span>], rectangles[<span class="number">0</span>][<span class="number">1</span>]);</span><br><span class="line">        <span class="type">int</span> <span class="variable">total</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span>[] rectangle : rectangles) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">min</span> <span class="operator">=</span> Math.min(rectangle[<span class="number">0</span>], rectangle[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">if</span> (max &lt; min) &#123;</span><br><span class="line">                max = min;</span><br><span class="line">                total = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (max == min)&#123;</span><br><span class="line">                total ++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> total;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>思路: 查询每个数组里最小的数值, 因为矩形切割为正方形肯定是以最小的边为边. 遍历时记录目前的最大值 max 并记录出现次数 total, 如果发现又出现更大的边, 则清空次数 total, 最后返回最大边出现次数 total</strong></p>]]></content>
     
@@ -57,19 +57,19 @@
     
     
     
-    <category term="LeetCode" scheme="http://example.com/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
     
     
-    <category term="leetcode" scheme="http://example.com/tags/leetcode/"/>
+    <category term="leetcode" scheme="https://zhangyutongdeyonghuming.github.io/tags/leetcode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode每日一题1414. 和为 K 的最少斐波那契数字数目</title>
-    <link href="http://example.com/2022/02/03/leetcode1414/"/>
-    <id>http://example.com/2022/02/03/leetcode1414/</id>
+    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/03/leetcode1414/"/>
+    <id>https://zhangyutongdeyonghuming.github.io/2022/02/03/leetcode1414/</id>
     <published>2022-02-03T08:58:45.000Z</published>
-    <updated>2022-02-13T03:07:03.698Z</updated>
+    <updated>2022-02-13T04:29:35.931Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bb6f562701e42d28eb4394a0e48735d~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">findMinFibonacciNumbers</span><span class="params">(<span class="type">int</span> k)</span> &#123;</span><br><span class="line">        List&lt;Integer&gt; fibList = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        fibList.add(<span class="number">1</span>);</span><br><span class="line">        fibList.add(<span class="number">1</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">1</span>, b = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (b &lt;= k) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span> a + b;</span><br><span class="line">            a = b;</span><br><span class="line">            b = c;</span><br><span class="line">            fibList.add(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">ans</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 查找几个数组成k</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> fibList.size() - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (fibList.get(i) &lt;= k) &#123;</span><br><span class="line">                k -= fibList.get(i);</span><br><span class="line">                ans++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="思路-贪心算法"><a href="#思路-贪心算法" class="headerlink" title="思路: 贪心算法"></a>思路: 贪心算法</h1><p>先将数列创建出来, 然后假定有最优解, 从后向前遍历, 如果 <strong>数列的值 &lt;&#x3D; k, k &#x3D; k - 数列的值</strong><br>然后 ans 加一, 最后得出解为 ans.</p>]]></content>
     
@@ -81,10 +81,10 @@
     
     
     
-    <category term="LeetCode" scheme="http://example.com/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
     
     
-    <category term="leetcode" scheme="http://example.com/tags/leetcode/"/>
+    <category term="leetcode" scheme="https://zhangyutongdeyonghuming.github.io/tags/leetcode/"/>
     
   </entry>
   
