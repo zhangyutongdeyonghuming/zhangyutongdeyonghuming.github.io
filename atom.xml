@@ -6,7 +6,7 @@
   <link href="https://zhangyutongdeyonghuming.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhangyutongdeyonghuming.github.io/"/>
-  <updated>2022-02-13T04:29:40.609Z</updated>
+  <updated>2022-02-13T08:07:38.459Z</updated>
   <id>https://zhangyutongdeyonghuming.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>LeetCode 每日一题1748. 唯一元素的和</title>
+    <title>LeetCode每日一题1189. &quot;气球&quot;的最大数量</title>
+    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/13/leetcode1189/"/>
+    <id>https://zhangyutongdeyonghuming.github.io/2022/02/13/leetcode1189/</id>
+    <published>2022-02-13T08:06:14.000Z</published>
+    <updated>2022-02-13T08:07:38.459Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/993a2f62697a44da9855ca2ac04b6e82~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><p><strong>思路: hash, 将每个字符存在 hash, 最后取出最小值即可;</strong><br><strong>注意: l&#x2F;o 值需要除以二, 因为需求是两个 l&#x2F;o</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/993a2f62697a44da9855ca2ac04b6e82~tplv-k3u1fbpfcp-watermark.image&quot; alt=&quot;image.</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="hash" scheme="https://zhangyutongdeyonghuming.github.io/tags/hash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode每日一题1748. 唯一元素的和</title>
     <link href="https://zhangyutongdeyonghuming.github.io/2022/02/06/leetcode1748/"/>
     <id>https://zhangyutongdeyonghuming.github.io/2022/02/06/leetcode1748/</id>
     <published>2022-02-06T11:22:01.000Z</published>
-    <updated>2022-02-13T04:29:40.609Z</updated>
+    <updated>2022-02-13T08:07:48.215Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/25368dcd8a984141aedbbda3e0a94daf~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">sumOfUnique</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; nums.length ; i ++) &#123;</span><br><span class="line">            map.put(nums[i], map.getOrDefault(nums[i], <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (Map.Entry&lt;Integer, Integer&gt; entry : map.entrySet()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (entry.getValue() == <span class="number">1</span>) &#123;</span><br><span class="line">                sum += entry.getKey();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>思路: 先将数存到 hash 里, 然后遍历值为 1 的 key 相加返回即可</strong></p>]]></content>
     
