@@ -3,11 +3,11 @@
   <title>ZhangYutong</title>
   
   <subtitle>君子性非异也, 善假于物也</subtitle>
-  <link href="https://zhangyutongdeyonghuming.github.io/atom.xml" rel="self"/>
+  <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
-  <link href="https://zhangyutongdeyonghuming.github.io/"/>
+  <link href="https://interestingblog.top/"/>
   <updated>2022-02-13T08:11:17.260Z</updated>
-  <id>https://zhangyutongdeyonghuming.github.io/</id>
+  <id>https://interestingblog.top/</id>
   
   <author>
     <name>ZhangYutong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>LeetCode每日一题1189. &quot;气球&quot;的最大数量</title>
-    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/13/leetcode1189/"/>
-    <id>https://zhangyutongdeyonghuming.github.io/2022/02/13/leetcode1189/</id>
+    <link href="https://interestingblog.top/2022/02/13/leetcode1189/"/>
+    <id>https://interestingblog.top/2022/02/13/leetcode1189/</id>
     <published>2022-02-13T08:06:14.000Z</published>
     <updated>2022-02-13T08:11:17.260Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
     
     
-    <category term="hash" scheme="https://zhangyutongdeyonghuming.github.io/tags/hash/"/>
+    <category term="hash" scheme="https://interestingblog.top/tags/hash/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode每日一题1748. 唯一元素的和</title>
-    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/06/leetcode1748/"/>
-    <id>https://zhangyutongdeyonghuming.github.io/2022/02/06/leetcode1748/</id>
+    <link href="https://interestingblog.top/2022/02/06/leetcode1748/"/>
+    <id>https://interestingblog.top/2022/02/06/leetcode1748/</id>
     <published>2022-02-06T11:22:01.000Z</published>
     <updated>2022-02-13T08:07:48.215Z</updated>
     
@@ -57,17 +57,17 @@
     
     
     
-    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
     
     
-    <category term="leetcode" scheme="https://zhangyutongdeyonghuming.github.io/tags/leetcode/"/>
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode每日一题1725. 可以形成最大正方形的矩形数目, 遍历</title>
-    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/04/leetcode1725/"/>
-    <id>https://zhangyutongdeyonghuming.github.io/2022/02/04/leetcode1725/</id>
+    <link href="https://interestingblog.top/2022/02/04/leetcode1725/"/>
+    <id>https://interestingblog.top/2022/02/04/leetcode1725/</id>
     <published>2022-02-04T06:19:05.000Z</published>
     <updated>2022-02-13T04:29:38.366Z</updated>
     
@@ -81,17 +81,17 @@
     
     
     
-    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
     
     
-    <category term="leetcode" scheme="https://zhangyutongdeyonghuming.github.io/tags/leetcode/"/>
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode每日一题1414. 和为 K 的最少斐波那契数字数目</title>
-    <link href="https://zhangyutongdeyonghuming.github.io/2022/02/03/leetcode1414/"/>
-    <id>https://zhangyutongdeyonghuming.github.io/2022/02/03/leetcode1414/</id>
+    <link href="https://interestingblog.top/2022/02/03/leetcode1414/"/>
+    <id>https://interestingblog.top/2022/02/03/leetcode1414/</id>
     <published>2022-02-03T08:58:45.000Z</published>
     <updated>2022-02-13T04:29:35.931Z</updated>
     
@@ -105,10 +105,10 @@
     
     
     
-    <category term="LeetCode" scheme="https://zhangyutongdeyonghuming.github.io/categories/LeetCode/"/>
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
     
     
-    <category term="leetcode" scheme="https://zhangyutongdeyonghuming.github.io/tags/leetcode/"/>
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
     
   </entry>
   
