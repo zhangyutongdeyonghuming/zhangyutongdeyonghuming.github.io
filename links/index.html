@@ -139,7 +139,7 @@
         
         
         <li class="menu-item menu-item-repository">
-          <a target="_blank" rel="noopener" href="https://github.com/zhangyutongdeyonghuming">
+          <a href="/repository">
             
             <i class="icon icon-project"></i>
             
@@ -352,7 +352,7 @@
   
   <section id="comments">
   	
-      <div id="uyan_frame"></div>
+      <div id="vcomments"></div>
     
   </section>
 
@@ -417,8 +417,29 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
     
-    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'xd0oYavUxGErgAkQOO5DSoLh-gzGzoHsz',
+    appKey: '8PgW4WwAPDwuMdtIjIOm97Gs',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
 
+     
 
 
 
