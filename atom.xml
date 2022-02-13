@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-13T08:11:17.260Z</updated>
+  <updated>2022-02-13T13:37:29.067Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode57.和为s的两个数字</title>
+    <link href="https://interestingblog.top/2022/02/13/leetcode57/"/>
+    <id>https://interestingblog.top/2022/02/13/leetcode57/</id>
+    <published>2022-02-13T13:32:34.000Z</published>
+    <updated>2022-02-13T13:37:29.067Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/492c34c99632474d910ccb7dc920773a~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><p><strong>思路 1: hash</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] twoSum(<span class="type">int</span>[] nums, <span class="type">int</span> target) &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">            <span class="keyword">if</span> (map.get(target - num) != <span class="literal">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;num, target - num&#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(num, num);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>使用 hash 存储, 跟两数之和一个解法.</p></blockquote><p><strong>思路 2: 双指针</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] twoSum(<span class="type">int</span>[] nums, <span class="type">int</span> target) &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = nums.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] + nums[j] &gt; target) j--;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (nums[i] + nums[j] &lt; target) i ++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[] &#123;nums[i], nums[j]&#125;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>双指针对撞, 大于左移右指针, 小于右移左指针, 等于则返回.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/492c34c99632474d910ccb7dc920773a~tplv-k3u1fbpfcp-watermark.image&quot; alt=&quot;image.</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
+    
+    <category term="双指针" scheme="https://interestingblog.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode每日一题1189. &quot;气球&quot;的最大数量</title>
