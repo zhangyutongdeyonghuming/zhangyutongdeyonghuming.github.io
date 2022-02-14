@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-13T13:37:29.067Z</updated>
+  <updated>2022-02-14T12:20:08.962Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode每日一题540. 有序数组中的单一元素</title>
+    <link href="https://interestingblog.top/2022/02/14/leetcode540/"/>
+    <id>https://interestingblog.top/2022/02/14/leetcode540/</id>
+    <published>2022-02-14T12:19:38.000Z</published>
+    <updated>2022-02-14T12:20:08.962Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dedec8230174dc18c2f5d0ed50af142~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">singleNonDuplicate</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            result ^= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>思路: 按位异或, 因为处了目标之外其他元素都出现了两次, 所以可以通过异或来拿到最终的值;<br/><br>tips:0 ^ 0 &#x3D; 0; 1 ^ 1 &#x3D; 0; 0 ^ 1 &#x3D; 1;</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dedec8230174dc18c2f5d0ed50af142~tplv-k3u1fbpfcp-watermark.image&quot; alt=&quot;image.</summary>
+      
+    
+    
+    
+    
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
+    
+    <category term="位运算" scheme="https://interestingblog.top/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode57.和为s的两个数字</title>
