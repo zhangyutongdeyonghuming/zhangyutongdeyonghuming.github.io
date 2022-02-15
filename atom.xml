@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-14T13:01:07.055Z</updated>
+  <updated>2022-02-15T13:00:52.036Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode每日一题1380. 矩阵中的幸运数</title>
+    <link href="https://interestingblog.top/2022/02/15/leetcode1380/"/>
+    <id>https://interestingblog.top/2022/02/15/leetcode1380/</id>
+    <published>2022-02-15T13:00:12.000Z</published>
+    <updated>2022-02-15T13:00:52.036Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e710d9062ca14968bf14c9266ae02756~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><p><strong>思路: 同行最小且同列最大的数只有一个, 找到每行最小的数, 每列最大的数, 然后遍历找相同的数即可</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;Integer&gt; <span class="title function_">luckyNumbers</span> <span class="params">(<span class="type">int</span>[][] matrix)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> matrix.length;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> matrix[<span class="number">0</span>].length;</span><br><span class="line">        List&lt;Integer&gt; res = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="type">int</span>[] row = <span class="keyword">new</span> <span class="title class_">int</span>[m];</span><br><span class="line">        <span class="type">int</span>[] col = <span class="keyword">new</span> <span class="title class_">int</span>[n];</span><br><span class="line">        <span class="comment">// 给行最小值数组填充值</span></span><br><span class="line">        Arrays.fill(row,Integer.MAX_VALUE);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">                row[i] = Math.min(matrix[i][j], row[i]);</span><br><span class="line">                col[j] = Math.max(matrix[i][j], col[j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; row.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; col.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (row[i] == col[j]) res.add(row[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e710d9062ca14968bf14c9266ae02756~tplv-k3u1fbpfcp-watermark.image&quot; alt=&quot;image.</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode每日一题540. 有序数组中的单一元素</title>
