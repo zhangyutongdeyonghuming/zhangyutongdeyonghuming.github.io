@@ -17,25 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>LeetCode每日一题540. 有序数组中的单一元素 | 有趣的博客</title>
-  <meta name="description" content="123456789class Solution &amp;#123;    public int singleNonDuplicate(int[] nums) &amp;#123;        int result &#x3D; 0;        for (int i &#x3D; 0; i &lt; nums.length; i++) &amp;#123;            result ^&#x3D; nums[i];        &amp;">
+  <title>LeetCode26. 删除有序数组中的重复项 | 有趣的博客</title>
+  <meta name="description" content="leetcode 地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;remove-duplicates-from-sorted-array&#x2F;  思路: 双指针, 左指针移动到比对位置, 右指针移动到下一个不同数字处替换左指针的下一位, 时间复杂度 O(n), 空间复杂度 O(1) 1234567891011121314class Solution &amp;#123;    pub">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode每日一题540. 有序数组中的单一元素">
-<meta property="og:url" content="https://interestingblog.top/2022/02/14/leetcode540/index.html">
+<meta property="og:title" content="LeetCode26. 删除有序数组中的重复项">
+<meta property="og:url" content="https://interestingblog.top/2022/02/16/leetcode26/index.html">
 <meta property="og:site_name" content="ZhangYutong">
-<meta property="og:description" content="123456789class Solution &amp;#123;    public int singleNonDuplicate(int[] nums) &amp;#123;        int result &#x3D; 0;        for (int i &#x3D; 0; i &lt; nums.length; i++) &amp;#123;            result ^&#x3D; nums[i];        &amp;">
+<meta property="og:description" content="leetcode 地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;remove-duplicates-from-sorted-array&#x2F;  思路: 双指针, 左指针移动到比对位置, 右指针移动到下一个不同数字处替换左指针的下一位, 时间复杂度 O(n), 空间复杂度 O(1) 1234567891011121314class Solution &amp;#123;    pub">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dedec8230174dc18c2f5d0ed50af142~tplv-k3u1fbpfcp-watermark.image">
-<meta property="article:published_time" content="2022-02-14T12:19:38.000Z">
-<meta property="article:modified_time" content="2022-02-14T13:01:07.055Z">
+<meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c33ec1e3962045f78802619b5f829f58~tplv-k3u1fbpfcp-watermark.image">
+<meta property="article:published_time" content="2022-02-16T13:11:25.000Z">
+<meta property="article:modified_time" content="2022-02-16T13:12:11.347Z">
 <meta property="article:author" content="ZhangYutong">
 <meta property="article:tag" content="leetcode">
-<meta property="article:tag" content="位运算">
-<meta property="article:tag" content="二分">
+<meta property="article:tag" content="双指针">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dedec8230174dc18c2f5d0ed50af142~tplv-k3u1fbpfcp-watermark.image">
+<meta name="twitter:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c33ec1e3962045f78802619b5f829f58~tplv-k3u1fbpfcp-watermark.image">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://interestingblog.top/2022/02/14/leetcode540/index.html">
+  <link rel="canonical" href="https://interestingblog.top/2022/02/16/leetcode26/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ZhangYutong" type="application/atom+xml">
   
@@ -334,14 +333,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-leetcode540" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-leetcode26" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode每日一题540. 有序数组中的单一元素
+      LeetCode26. 删除有序数组中的重复项
     </h1>
   
 
@@ -349,8 +348,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/02/14/leetcode540/" class="article-date">
-	  <time datetime="2022-02-14T12:19:38.000Z" itemprop="datePublished">2022-02-14</time>
+	<a href="/2022/02/16/leetcode26/" class="article-date">
+	  <time datetime="2022-02-16T13:11:25.000Z" itemprop="datePublished">2022-02-16</time>
 	</a>
 </span>
         
@@ -362,7 +361,7 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/leetcode/" rel="tag">leetcode</a>, <a class="article-tag-link-link" href="/tags/%E4%BA%8C%E5%88%86/" rel="tag">二分</a>, <a class="article-tag-link-link" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" rel="tag">位运算</a>
+	<a class="article-tag-link-link" href="/tags/leetcode/" rel="tag">leetcode</a>, <a class="article-tag-link-link" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag">双指针</a>
   </span>
 
 
@@ -375,23 +374,16 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/14/leetcode540/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/16/leetcode26/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3dedec8230174dc18c2f5d0ed50af142~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">singleNonDuplicate</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            result ^= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路 1: 按位异或, 因为处了目标之外其他元素都出现了两次, 所以可以通过异或来拿到最终的值;<br/><br>时间复杂度 O(n) 空间复杂度 O(1)<br/><br>tips:0 ^ 0 &#x3D; 0; 1 ^ 1 &#x3D; 0; 0 ^ 1 &#x3D; 1;</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">singleNonDuplicate</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = nums.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> i + ((j - i) &gt;&gt; <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span> (mid % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">// 偶数</span></span><br><span class="line">                <span class="keyword">if</span> (nums[mid] == nums[mid + <span class="number">1</span>]) i = mid + <span class="number">1</span>;</span><br><span class="line">                <span class="type">else</span> <span class="variable">j</span> <span class="operator">=</span> mid;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">// 奇数</span></span><br><span class="line">                <span class="keyword">if</span> (nums[mid] == nums[mid - <span class="number">1</span>]) i = mid + <span class="number">1</span>;</span><br><span class="line">                <span class="type">else</span> <span class="variable">j</span> <span class="operator">=</span> mid;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路 2: 二分法, 根据 mid 奇偶数判断相应情况 时间复杂度 O(logn) 空间复杂度 O(1)</p>
-</blockquote>
+        <p>leetcode 地址: <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/">https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/</a></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c33ec1e3962045f78802619b5f829f58~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<p><strong>思路: 双指针, 左指针移动到比对位置, 右指针移动到下一个不同数字处替换左指针的下一位, 时间复杂度 O(n), 空间复杂度 O(1)</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeDuplicates</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> <span class="number">0</span>, n = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 左指针移动到被替换位置, 右指针移动到下一个不同数字处</span></span><br><span class="line">        <span class="keyword">while</span> (n &lt; nums.length) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[m] != nums[n]) &#123;</span><br><span class="line">                <span class="comment">// 左指针移动一位后替换</span></span><br><span class="line">                nums[++ m] = nums[n];</span><br><span class="line">            &#125;</span><br><span class="line">            n ++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> m + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -401,7 +393,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://interestingblog.top/2022/02/14/leetcode540/" title="LeetCode每日一题540. 有序数组中的单一元素" target="_blank" rel="external">https://interestingblog.top/2022/02/14/leetcode540/</a>
+      <a href="https://interestingblog.top/2022/02/16/leetcode26/" title="LeetCode26. 删除有序数组中的重复项" target="_blank" rel="external">https://interestingblog.top/2022/02/16/leetcode26/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -447,13 +439,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/02/15/leetcode1380/" title="LeetCode每日一题1380. 矩阵中的幸运数"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/02/13/leetcode57/" title="LeetCode57.和为s的两个数字"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/02/15/leetcode1380/" title="LeetCode每日一题1380. 矩阵中的幸运数"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

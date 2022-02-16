@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-15T13:00:52.036Z</updated>
+  <updated>2022-02-16T13:12:11.347Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode26. 删除有序数组中的重复项</title>
+    <link href="https://interestingblog.top/2022/02/16/leetcode26/"/>
+    <id>https://interestingblog.top/2022/02/16/leetcode26/</id>
+    <published>2022-02-16T13:11:25.000Z</published>
+    <updated>2022-02-16T13:12:11.347Z</updated>
+    
+    <content type="html"><![CDATA[<p>leetcode 地址: <a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/">https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/</a></p><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c33ec1e3962045f78802619b5f829f58~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><p><strong>思路: 双指针, 左指针移动到比对位置, 右指针移动到下一个不同数字处替换左指针的下一位, 时间复杂度 O(n), 空间复杂度 O(1)</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeDuplicates</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> <span class="number">0</span>, n = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 左指针移动到被替换位置, 右指针移动到下一个不同数字处</span></span><br><span class="line">        <span class="keyword">while</span> (n &lt; nums.length) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[m] != nums[n]) &#123;</span><br><span class="line">                <span class="comment">// 左指针移动一位后替换</span></span><br><span class="line">                nums[++ m] = nums[n];</span><br><span class="line">            &#125;</span><br><span class="line">            n ++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> m + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;leetcode 地址: &lt;a href=&quot;https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/&quot;&gt;https://leetcode-cn.com/problems/remove-dupl</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="leetcode" scheme="https://interestingblog.top/tags/leetcode/"/>
+    
+    <category term="双指针" scheme="https://interestingblog.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode每日一题1380. 矩阵中的幸运数</title>
