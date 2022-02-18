@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-17T14:45:49.685Z</updated>
+  <updated>2022-02-18T12:23:53.715Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode1791. 找出星型图的中心节点</title>
+    <link href="https://interestingblog.top/2022/02/18/leetcode1791/"/>
+    <id>https://interestingblog.top/2022/02/18/leetcode1791/</id>
+    <published>2022-02-18T12:23:15.000Z</published>
+    <updated>2022-02-18T12:23:53.715Z</updated>
+    
+    <content type="html"><![CDATA[<p>leetcode 地址: <a href="https://leetcode-cn.com/problems/find-center-of-star-graph/">https://leetcode-cn.com/problems/find-center-of-star-graph/</a></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/93bab0ecf1164afba3b66ec93e859641~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><blockquote><p>思路: 中心结点连接所有节点, 因此会出现在每一个数组中, 因此找到重复元素即可</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">findCenter</span><span class="params">(<span class="type">int</span>[][] edges)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] edge = edges[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">if</span> (edges[<span class="number">1</span>][<span class="number">0</span>] == edge[<span class="number">0</span>]||edges[<span class="number">1</span>][<span class="number">0</span>] == edge[<span class="number">1</span>]) <span class="keyword">return</span> edges[<span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> edges[<span class="number">1</span>][<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;leetcode 地址: &lt;a href=&quot;https://leetcode-cn.com/problems/find-center-of-star-graph/&quot;&gt;https://leetcode-cn.com/problems/find-center-of-star-g</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>LeetCode688. 骑士在棋盘上的概率</title>
