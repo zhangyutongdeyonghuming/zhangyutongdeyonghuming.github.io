@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-18T12:23:53.715Z</updated>
+  <updated>2022-02-19T06:17:48.592Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode969. 煎饼排序</title>
+    <link href="https://interestingblog.top/2022/02/19/leetcode969/"/>
+    <id>https://interestingblog.top/2022/02/19/leetcode969/</id>
+    <published>2022-02-19T06:16:34.000Z</published>
+    <updated>2022-02-19T06:17:48.592Z</updated>
+    
+    <content type="html"><![CDATA[<p>leetcode 地址: <a href="https://leetcode-cn.com/problems/pancake-sorting/">https://leetcode-cn.com/problems/pancake-sorting/</a></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/45e9d681f3d94411925616d6227de49f~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="type">boolean</span> <span class="title function_">isSorted</span><span class="params">(<span class="type">int</span>[] array)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i] &gt; array[i + <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> List&lt;Integer&gt; <span class="title function_">pancakeSort</span><span class="params">(<span class="type">int</span>[] arr)</span> &#123;</span><br><span class="line">        List&lt;Integer&gt; result = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> arr.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (isSorted(arr)) <span class="keyword">return</span> result;</span><br><span class="line">            <span class="type">int</span> <span class="variable">maxIndex</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">            <span class="comment">// 先找最大值</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt;= i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[maxIndex] &lt; arr[j]) &#123;</span><br><span class="line">                    maxIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 翻转0-maxIndex</span></span><br><span class="line">            reverse(arr, <span class="number">0</span>, maxIndex);</span><br><span class="line">            result.add(maxIndex + <span class="number">1</span>);</span><br><span class="line">            <span class="comment">// 翻转0-i</span></span><br><span class="line">            reverse(arr, <span class="number">0</span>, i);</span><br><span class="line">            result.add(i + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">reverse</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> i, <span class="type">int</span> j)</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[i];</span><br><span class="line">            arr[i++] = arr[j];</span><br><span class="line">            arr[j--] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>思路: 煎饼排序简单解释就是对于数组的某一段进行翻转, 使逐渐排好序. 根据这个特性, 可以使用冒泡排序的思维, 先从后开始循环 n 次(数组长度), 每次找到最大的值, 然后翻转到指针指向位, 逐步排好序即可 <br/><br>官方[3,2,4,1] &#x3D;&gt; 可为[3, 4, 2, 3, 1, 2] <br/><br>如图:</p></blockquote><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e694d7452e8400ca5c9a41255d2eb6b~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;leetcode 地址: &lt;a href=&quot;https://leetcode-cn.com/problems/pancake-sorting/&quot;&gt;https://leetcode-cn.com/problems/pancake-sorting/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;im</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="冒泡排序" scheme="https://interestingblog.top/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode1791. 找出星型图的中心节点</title>
