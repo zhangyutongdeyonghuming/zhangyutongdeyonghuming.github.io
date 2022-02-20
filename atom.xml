@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-20T06:37:32.559Z</updated>
+  <updated>2022-02-20T07:44:06.720Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode281周赛6013.合并零之间的节点</title>
+    <link href="https://interestingblog.top/2022/02/20/leetcode6013/"/>
+    <id>https://interestingblog.top/2022/02/20/leetcode6013/</id>
+    <published>2022-02-20T06:42:21.000Z</published>
+    <updated>2022-02-20T07:44:06.720Z</updated>
+    
+    <content type="html"><![CDATA[<p>原题地址: <a href="https://leetcode-cn.com/problems/merge-nodes-in-between-zeros/">https://leetcode-cn.com/problems/merge-nodes-in-between-zeros/</a></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f5bc078a14b401b809d29717e66a504~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> ListNode <span class="title function_">mergeNodes</span><span class="params">(ListNode head)</span> &#123;</span><br><span class="line">        <span class="type">ListNode</span> <span class="variable">temp</span> <span class="operator">=</span> head, last = head.next;</span><br><span class="line">        <span class="comment">// 原地修改, 双指针</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">val</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (last != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (last.val == <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 移动到下一个0处时, 给temp赋值并指向下一个0</span></span><br><span class="line">                temp.val = val;</span><br><span class="line">                val = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">if</span> (last.next == <span class="literal">null</span>) &#123;</span><br><span class="line">                    temp.next = <span class="literal">null</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    temp.next = last;</span><br><span class="line">                    temp = temp.next;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            val += last.val;</span><br><span class="line">            last = last.next;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>思路: 双指针, 左边指向 0 所在节点, 右边遍历, 当右指针指向 0 时, 将和放到左指针指向位置并改变左指针指向为右指针位置, 然后继续遍历, 重复操作至右指针指向最后一个节点.</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;原题地址: &lt;a href=&quot;https://leetcode-cn.com/problems/merge-nodes-in-between-zeros/&quot;&gt;https://leetcode-cn.com/problems/merge-nodes-in-between-ze</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="双指针" scheme="https://interestingblog.top/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+    <category term="周赛" scheme="https://interestingblog.top/tags/%E5%91%A8%E8%B5%9B/"/>
+    
+    <category term="链表" scheme="https://interestingblog.top/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode281周赛6012.统计各位数字之和为偶数的整数个数</title>
