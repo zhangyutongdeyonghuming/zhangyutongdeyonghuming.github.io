@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-19T06:17:48.592Z</updated>
+  <updated>2022-02-20T06:25:19.530Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode717.1比特与2比特字符</title>
+    <link href="https://interestingblog.top/2022/02/20/leetcode717/"/>
+    <id>https://interestingblog.top/2022/02/20/leetcode717/</id>
+    <published>2022-02-20T06:23:41.000Z</published>
+    <updated>2022-02-20T06:25:19.530Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a0eb83094a6c46a582944430f96d8126~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isOneBitCharacter</span><span class="params">(<span class="type">int</span>[] bits)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> bits.length - <span class="number">1</span>, i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; n) &#123;</span><br><span class="line">            <span class="keyword">if</span> (bits[i] == <span class="number">0</span>) i+=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> i += <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">return</span> <span class="variable">n</span> <span class="operator">=</span>= i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>思路: 遍历, 0 开头的走一位, 1 开头的走两位(不管是 11 还是 10 都是两位), 走到最后判断是不是最后一位的下标即可</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a0eb83094a6c46a582944430f96d8126~tplv-k3u1fbpfcp-watermark.image&quot; alt=&quot;image.</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="遍历" scheme="https://interestingblog.top/tags/%E9%81%8D%E5%8E%86/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode969. 煎饼排序</title>
