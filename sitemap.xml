@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://interestingblog.top/2022/02/17/leetcode688/</loc>
+    
+    <lastmod>2022-02-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://interestingblog.top/2022/02/20/leetcode6013/</loc>
     
     <lastmod>2022-02-20</lastmod>
@@ -111,15 +120,6 @@
   
   <url>
     <loc>https://interestingblog.top/2022/02/16/leetcode26/</loc>
-    
-    <lastmod>2022-02-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://interestingblog.top/2022/02/17/leetcode688/</loc>
     
     <lastmod>2022-02-17</lastmod>
     
