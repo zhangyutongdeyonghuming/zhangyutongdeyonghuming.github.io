@@ -17,23 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>LeetCode每日一题1189. &#34;气球&#34;的最大数量 | 有趣的博客</title>
-  <meta name="description" content="思路: hash, 将每个字符存在 hash, 最后取出最小值即可;注意: l&#x2F;o 值需要除以二, 因为需求是两个 l&#x2F;o 12345678910111213141516171819202122232425262728class Solution &amp;#123;    public int maxNumberOfBalloons(String text) &amp;#123;">
+  <title>LeetCode281周赛6014.构造限制重复的字符串 | 有趣的博客</title>
+  <meta name="description" content="原题地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;construct-string-with-repeat-limit&#x2F;   思路: 贪心, 构造 map 存储遍历次数, 每次取最大的字母, 遍历不超过 repeatLimit 次, 若有剩余则再取一次除当前字母外最大字母, 依次追加  123456789101112131415161718192021222324252">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode每日一题1189. &quot;气球&quot;的最大数量">
-<meta property="og:url" content="https://interestingblog.top/2022/02/13/leetcode1189/index.html">
+<meta property="og:title" content="LeetCode281周赛6014.构造限制重复的字符串">
+<meta property="og:url" content="https://interestingblog.top/2022/02/20/leetcode6014/index.html">
 <meta property="og:site_name" content="ZhangYutong">
-<meta property="og:description" content="思路: hash, 将每个字符存在 hash, 最后取出最小值即可;注意: l&#x2F;o 值需要除以二, 因为需求是两个 l&#x2F;o 12345678910111213141516171819202122232425262728class Solution &amp;#123;    public int maxNumberOfBalloons(String text) &amp;#123;">
+<meta property="og:description" content="原题地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;construct-string-with-repeat-limit&#x2F;   思路: 贪心, 构造 map 存储遍历次数, 每次取最大的字母, 遍历不超过 repeatLimit 次, 若有剩余则再取一次除当前字母外最大字母, 依次追加  123456789101112131415161718192021222324252">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/993a2f62697a44da9855ca2ac04b6e82~tplv-k3u1fbpfcp-watermark.image">
-<meta property="article:published_time" content="2022-02-13T08:06:14.000Z">
-<meta property="article:modified_time" content="2022-02-17T14:46:49.653Z">
+<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89b2de57c38c41d39be0f41cb4193dcc~tplv-k3u1fbpfcp-watermark.image">
+<meta property="article:published_time" content="2022-02-20T11:49:22.000Z">
+<meta property="article:modified_time" content="2022-02-20T11:49:49.451Z">
 <meta property="article:author" content="ZhangYutong">
-<meta property="article:tag" content="hash">
+<meta property="article:tag" content="周赛">
+<meta property="article:tag" content="贪心">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/993a2f62697a44da9855ca2ac04b6e82~tplv-k3u1fbpfcp-watermark.image">
+<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89b2de57c38c41d39be0f41cb4193dcc~tplv-k3u1fbpfcp-watermark.image">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://interestingblog.top/2022/02/13/leetcode1189/index.html">
+  <link rel="canonical" href="https://interestingblog.top/2022/02/20/leetcode6014/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ZhangYutong" type="application/atom+xml">
   
@@ -332,14 +333,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-leetcode1189" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-leetcode6014" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode每日一题1189. &#34;气球&#34;的最大数量
+      LeetCode281周赛6014.构造限制重复的字符串
     </h1>
   
 
@@ -347,8 +348,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/02/13/leetcode1189/" class="article-date">
-	  <time datetime="2022-02-13T08:06:14.000Z" itemprop="datePublished">2022-02-13</time>
+	<a href="/2022/02/20/leetcode6014/" class="article-date">
+	  <time datetime="2022-02-20T11:49:22.000Z" itemprop="datePublished">2022-02-20</time>
 	</a>
 </span>
         
@@ -360,7 +361,7 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/hash/" rel="tag">hash</a>
+	<a class="article-tag-link-link" href="/tags/%E5%91%A8%E8%B5%9B/" rel="tag">周赛</a>, <a class="article-tag-link-link" href="/tags/%E8%B4%AA%E5%BF%83/" rel="tag">贪心</a>
   </span>
 
 
@@ -373,15 +374,18 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/13/leetcode1189/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/20/leetcode6014/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/993a2f62697a44da9855ca2ac04b6e82~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<p><strong>思路: hash, 将每个字符存在 hash, 最后取出最小值即可;</strong><br><strong>注意: l&#x2F;o 值需要除以二, 因为需求是两个 l&#x2F;o</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">maxNumberOfBalloons</span><span class="params">(String text)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] dict = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; text.length() ; i ++) &#123;</span><br><span class="line">            <span class="type">char</span> <span class="variable">ch</span> <span class="operator">=</span> text.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (ch == <span class="string">&#x27;b&#x27;</span>) &#123;</span><br><span class="line">                dict[<span class="number">0</span>] ++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ch == <span class="string">&#x27;a&#x27;</span>) &#123;</span><br><span class="line">                dict[<span class="number">1</span>] ++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ch == <span class="string">&#x27;l&#x27;</span>) &#123;</span><br><span class="line">                dict[<span class="number">2</span>] ++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ch == <span class="string">&#x27;o&#x27;</span>) &#123;</span><br><span class="line">                dict[<span class="number">3</span>] ++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ch == <span class="string">&#x27;n&#x27;</span>) &#123;</span><br><span class="line">                dict[<span class="number">4</span>] ++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        dict[<span class="number">2</span>] /= <span class="number">2</span>;</span><br><span class="line">        dict[<span class="number">3</span>] /= <span class="number">2</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">minIndex</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; dict.length ; i ++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (dict[i] &lt; dict[minIndex]) &#123;</span><br><span class="line">                minIndex = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dict[minIndex];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>原题地址: <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/construct-string-with-repeat-limit/">https://leetcode-cn.com/problems/construct-string-with-repeat-limit/</a></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89b2de57c38c41d39be0f41cb4193dcc~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<blockquote>
+<p>思路: 贪心, 构造 map 存储遍历次数, 每次取最大的字母, 遍历不超过 repeatLimit 次, 若有剩余则再取一次除当前字母外最大字母, 依次追加</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">repeatLimitedString</span><span class="params">(String s, <span class="type">int</span> repeatLimit)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] map = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="comment">// 构造map</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            map[s.charAt(i) - <span class="string">&#x27;a&#x27;</span>] ++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 结果字符串</span></span><br><span class="line">        <span class="type">StringBuilder</span> <span class="variable">stringBuilder</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="comment">// 找最大的字母</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">minChar</span> <span class="operator">=</span> getMinChar(map, map.length - <span class="number">1</span>);</span><br><span class="line">        <span class="comment">// 直到minChar获取不到值</span></span><br><span class="line">        <span class="keyword">while</span> (minChar &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> Math.min(repeatLimit, map[minChar]);</span><br><span class="line">            <span class="keyword">while</span> (count -- &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                map[minChar] --;</span><br><span class="line">                stringBuilder.append((<span class="type">char</span>) (minChar + <span class="string">&#x27;a&#x27;</span>));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (minChar == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            <span class="comment">// 剩下的</span></span><br><span class="line">            <span class="keyword">if</span> (map[minChar] != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> minChar;</span><br><span class="line">                minChar = getMinChar(map, minChar - <span class="number">1</span>);</span><br><span class="line">                <span class="keyword">if</span> (minChar &lt; <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">                stringBuilder.append((<span class="type">char</span>) (minChar + <span class="string">&#x27;a&#x27;</span>));</span><br><span class="line">                map[minChar] --;</span><br><span class="line">                minChar = getMinChar(map, temp);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                minChar = getMinChar(map, minChar);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stringBuilder.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getMinChar</span><span class="params">(<span class="type">int</span>[] map, <span class="type">int</span> minChar)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> minChar; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (map[i] != <span class="number">0</span>) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -391,7 +395,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://interestingblog.top/2022/02/13/leetcode1189/" title="LeetCode每日一题1189. &#34;气球&#34;的最大数量" target="_blank" rel="external">https://interestingblog.top/2022/02/13/leetcode1189/</a>
+      <a href="https://interestingblog.top/2022/02/20/leetcode6014/" title="LeetCode281周赛6014.构造限制重复的字符串" target="_blank" rel="external">https://interestingblog.top/2022/02/20/leetcode6014/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -437,13 +441,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/02/13/leetcode57/" title="LeetCode57.和为s的两个数字"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/02/06/leetcode1748/" title="LeetCode每日一题1748. 唯一元素的和"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/02/20/leetcode6013/" title="LeetCode281周赛6013.合并零之间的节点"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-20T07:44:06.720Z</updated>
+  <updated>2022-02-20T11:49:49.451Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode281周赛6014.构造限制重复的字符串</title>
+    <link href="https://interestingblog.top/2022/02/20/leetcode6014/"/>
+    <id>https://interestingblog.top/2022/02/20/leetcode6014/</id>
+    <published>2022-02-20T11:49:22.000Z</published>
+    <updated>2022-02-20T11:49:49.451Z</updated>
+    
+    <content type="html"><![CDATA[<p>原题地址: <a href="https://leetcode-cn.com/problems/construct-string-with-repeat-limit/">https://leetcode-cn.com/problems/construct-string-with-repeat-limit/</a></p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/89b2de57c38c41d39be0f41cb4193dcc~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><blockquote><p>思路: 贪心, 构造 map 存储遍历次数, 每次取最大的字母, 遍历不超过 repeatLimit 次, 若有剩余则再取一次除当前字母外最大字母, 依次追加</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">repeatLimitedString</span><span class="params">(String s, <span class="type">int</span> repeatLimit)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] map = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="comment">// 构造map</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            map[s.charAt(i) - <span class="string">&#x27;a&#x27;</span>] ++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 结果字符串</span></span><br><span class="line">        <span class="type">StringBuilder</span> <span class="variable">stringBuilder</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="comment">// 找最大的字母</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">minChar</span> <span class="operator">=</span> getMinChar(map, map.length - <span class="number">1</span>);</span><br><span class="line">        <span class="comment">// 直到minChar获取不到值</span></span><br><span class="line">        <span class="keyword">while</span> (minChar &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> Math.min(repeatLimit, map[minChar]);</span><br><span class="line">            <span class="keyword">while</span> (count -- &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                map[minChar] --;</span><br><span class="line">                stringBuilder.append((<span class="type">char</span>) (minChar + <span class="string">&#x27;a&#x27;</span>));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (minChar == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            <span class="comment">// 剩下的</span></span><br><span class="line">            <span class="keyword">if</span> (map[minChar] != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> minChar;</span><br><span class="line">                minChar = getMinChar(map, minChar - <span class="number">1</span>);</span><br><span class="line">                <span class="keyword">if</span> (minChar &lt; <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">                stringBuilder.append((<span class="type">char</span>) (minChar + <span class="string">&#x27;a&#x27;</span>));</span><br><span class="line">                map[minChar] --;</span><br><span class="line">                minChar = getMinChar(map, temp);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                minChar = getMinChar(map, minChar);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stringBuilder.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getMinChar</span><span class="params">(<span class="type">int</span>[] map, <span class="type">int</span> minChar)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> minChar; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (map[i] != <span class="number">0</span>) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;原题地址: &lt;a href=&quot;https://leetcode-cn.com/problems/construct-string-with-repeat-limit/&quot;&gt;https://leetcode-cn.com/problems/construct-string-wi</summary>
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://interestingblog.top/categories/LeetCode/"/>
+    
+    
+    <category term="周赛" scheme="https://interestingblog.top/tags/%E5%91%A8%E8%B5%9B/"/>
+    
+    <category term="贪心" scheme="https://interestingblog.top/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode281周赛6013.合并零之间的节点</title>
