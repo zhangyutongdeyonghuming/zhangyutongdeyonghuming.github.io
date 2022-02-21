@@ -17,24 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>LeetCode281周赛6012.统计各位数字之和为偶数的整数个数 | 有趣的博客</title>
-  <meta name="description" content="原题地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;count-integers-with-even-digit-sum&#x2F;  123456789101112131415161718class Solution &amp;#123;    public int countEven(int num) &amp;#123;        int count &#x3D; 0, index &#x3D; 2;">
+  <title>LeetCode剑指Offer09.用两个栈实现队列 | 有趣的博客</title>
+  <meta name="description" content="原题地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;yong-liang-ge-zhan-shi-xian-dui-lie-lcof&#x2F;   思路: 使用两个栈模拟队列, 一个 in, 一个 out, 当入队时向 in push, 出队时判断 out 是否为空, 如果为空将 in 栈所有数据 pop 并 push 到 out 栈, 然后返回 out.pop.  123456">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode281周赛6012.统计各位数字之和为偶数的整数个数">
-<meta property="og:url" content="https://interestingblog.top/2022/02/20/leetcode6012/index.html">
+<meta property="og:title" content="LeetCode剑指Offer09.用两个栈实现队列">
+<meta property="og:url" content="https://interestingblog.top/2022/02/21/leetcode-jz09/index.html">
 <meta property="og:site_name" content="ZhangYutong">
-<meta property="og:description" content="原题地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;count-integers-with-even-digit-sum&#x2F;  123456789101112131415161718class Solution &amp;#123;    public int countEven(int num) &amp;#123;        int count &#x3D; 0, index &#x3D; 2;">
+<meta property="og:description" content="原题地址: https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;yong-liang-ge-zhan-shi-xian-dui-lie-lcof&#x2F;   思路: 使用两个栈模拟队列, 一个 in, 一个 out, 当入队时向 in push, 出队时判断 out 是否为空, 如果为空将 in 栈所有数据 pop 并 push 到 out 栈, 然后返回 out.pop.  123456">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32737bd90c684141b0b9f087d07b3942~tplv-k3u1fbpfcp-watermark.image">
-<meta property="article:published_time" content="2022-02-20T06:27:05.000Z">
-<meta property="article:modified_time" content="2022-02-20T06:37:32.559Z">
+<meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4cff7ee5904c4c7fa8574a1e7ee83af9~tplv-k3u1fbpfcp-watermark.image">
+<meta property="article:published_time" content="2022-02-21T13:17:12.000Z">
+<meta property="article:modified_time" content="2022-02-21T13:17:56.298Z">
 <meta property="article:author" content="ZhangYutong">
-<meta property="article:tag" content="遍历">
-<meta property="article:tag" content="周赛">
+<meta property="article:tag" content="队列">
+<meta property="article:tag" content="栈">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32737bd90c684141b0b9f087d07b3942~tplv-k3u1fbpfcp-watermark.image">
+<meta name="twitter:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4cff7ee5904c4c7fa8574a1e7ee83af9~tplv-k3u1fbpfcp-watermark.image">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://interestingblog.top/2022/02/20/leetcode6012/index.html">
+  <link rel="canonical" href="https://interestingblog.top/2022/02/21/leetcode-jz09/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ZhangYutong" type="application/atom+xml">
   
@@ -333,14 +333,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-leetcode6012" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-leetcode-jz09" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode281周赛6012.统计各位数字之和为偶数的整数个数
+      LeetCode剑指Offer09.用两个栈实现队列
     </h1>
   
 
@@ -348,8 +348,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/02/20/leetcode6012/" class="article-date">
-	  <time datetime="2022-02-20T06:27:05.000Z" itemprop="datePublished">2022-02-20</time>
+	<a href="/2022/02/21/leetcode-jz09/" class="article-date">
+	  <time datetime="2022-02-21T13:17:12.000Z" itemprop="datePublished">2022-02-21</time>
 	</a>
 </span>
         
@@ -361,7 +361,7 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/%E5%91%A8%E8%B5%9B/" rel="tag">周赛</a>, <a class="article-tag-link-link" href="/tags/%E9%81%8D%E5%8E%86/" rel="tag">遍历</a>
+	<a class="article-tag-link-link" href="/tags/%E6%A0%88/" rel="tag">栈</a>, <a class="article-tag-link-link" href="/tags/%E9%98%9F%E5%88%97/" rel="tag">队列</a>
   </span>
 
 
@@ -374,19 +374,20 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/20/leetcode6012/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/21/leetcode-jz09/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>原题地址: <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/count-integers-with-even-digit-sum/">https://leetcode-cn.com/problems/count-integers-with-even-digit-sum/</a></p>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32737bd90c684141b0b9f087d07b3942~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">countEven</span><span class="params">(<span class="type">int</span> num)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>, index = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">while</span> (index &lt;= num) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> index;</span><br><span class="line">            <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> (temp != <span class="number">0</span>) &#123;</span><br><span class="line">                i += temp % <span class="number">10</span>;</span><br><span class="line">                temp = temp / <span class="number">10</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                count ++;</span><br><span class="line">            &#125;</span><br><span class="line">            index ++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <p>原题地址: <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/">https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/</a></p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4cff7ee5904c4c7fa8574a1e7ee83af9~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
 <blockquote>
-<p>思路: 遍历直接从 2 开始, 对每一位数相加判断即可</p>
+<p>思路: 使用两个栈模拟队列, 一个 in, 一个 out, 当入队时向 in push, 出队时判断 out 是否为空, 如果为空将 in 栈所有数据 pop 并 push 到 out 栈, 然后返回 out.pop.</p>
 </blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">CQueue</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Stack&lt;Integer&gt; in;</span><br><span class="line">    <span class="keyword">private</span> Stack&lt;Integer&gt; out;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">CQueue</span><span class="params">()</span> &#123;</span><br><span class="line">        in = <span class="keyword">new</span> <span class="title class_">Stack</span>&lt;&gt;();</span><br><span class="line">        out = <span class="keyword">new</span> <span class="title class_">Stack</span>&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">appendTail</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        in.push(value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">deleteHead</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (out.empty()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!in.empty()) &#123;</span><br><span class="line">                out.push(in.pop());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (out.empty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> out.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your CQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * CQueue obj = new CQueue();</span></span><br><span class="line"><span class="comment"> * obj.appendTail(value);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.deleteHead();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> CQueue <span class="keyword">struct</span> &#123;</span><br><span class="line">	Out Stack</span><br><span class="line">	In  Stack</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Constructor</span><span class="params">()</span></span> CQueue &#123;</span><br><span class="line">	<span class="keyword">return</span> CQueue&#123;</span><br><span class="line">		Out: NewStack(),</span><br><span class="line">		In:  NewStack(),</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c *CQueue)</span></span> AppendTail(value <span class="type">int</span>) &#123;</span><br><span class="line">	c.In.Push(value)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c *CQueue)</span></span> DeleteHead() <span class="type">int</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> !c.Out.Empty() &#123;</span><br><span class="line">		<span class="keyword">return</span> c.Out.Pop()</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">for</span> !c.In.Empty() &#123;</span><br><span class="line">			c.Out.Push(c.In.Pop())</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> c.Out.Pop()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Stack 栈</span></span><br><span class="line"><span class="keyword">type</span> Stack <span class="keyword">struct</span> &#123;</span><br><span class="line">	Values []<span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// NewStack 栈 构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewStack</span><span class="params">()</span></span> Stack &#123;</span><br><span class="line">	<span class="keyword">return</span> Stack&#123;Values: <span class="built_in">make</span>([]<span class="type">int</span>, <span class="number">0</span>, <span class="number">5</span>)&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Push 进</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(s *Stack)</span></span> Push(val <span class="type">int</span>) &#123;</span><br><span class="line">	s.Values = <span class="built_in">append</span>(s.Values, val)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Pop 出</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(s *Stack)</span></span> Pop() <span class="type">int</span> &#123;</span><br><span class="line">	values := s.Values</span><br><span class="line">	<span class="keyword">if</span> s.Empty() &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">	&#125;</span><br><span class="line">	length := <span class="built_in">len</span>(values)</span><br><span class="line">	result := values[length<span class="number">-1</span>]</span><br><span class="line">	s.Values = values[:length<span class="number">-1</span>]</span><br><span class="line">	<span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(s *Stack)</span></span> Peek() <span class="type">int</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> s.Empty() &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> s.Values[<span class="built_in">len</span>(s.Values)<span class="number">-1</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(s *Stack)</span></span> Empty() <span class="type">bool</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> s.Values == <span class="literal">nil</span> || <span class="built_in">len</span>(s.Values) == <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your CQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * obj := Constructor();</span></span><br><span class="line"><span class="comment"> * obj.AppendTail(value);</span></span><br><span class="line"><span class="comment"> * param_2 := obj.DeleteHead();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -396,7 +397,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://interestingblog.top/2022/02/20/leetcode6012/" title="LeetCode281周赛6012.统计各位数字之和为偶数的整数个数" target="_blank" rel="external">https://interestingblog.top/2022/02/20/leetcode6012/</a>
+      <a href="https://interestingblog.top/2022/02/21/leetcode-jz09/" title="LeetCode剑指Offer09.用两个栈实现队列" target="_blank" rel="external">https://interestingblog.top/2022/02/21/leetcode-jz09/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -442,13 +443,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/02/20/leetcode6013/" title="LeetCode281周赛6013.合并零之间的节点"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/02/20/leetcode717/" title="LeetCode717.1比特与2比特字符"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/02/20/leetcode6014/" title="LeetCode281周赛6014.构造限制重复的字符串"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
