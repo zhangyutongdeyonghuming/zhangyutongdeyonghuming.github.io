@@ -17,22 +17,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>LeetCode每日一题1725. 可以形成最大正方形的矩形数目, 遍历 | 有趣的博客</title>
-  <meta name="description" content="1234567891011121314151617class Solution &amp;#123;    public int countGoodRectangles(int[][] rectangles) &amp;#123;        int max &#x3D; Math.min(rectangles[0][0], rectangles[0][1]);        int total &#x3D; 0;">
+  <title>LeetCode917. 仅仅反转字母 | 有趣的博客</title>
+  <meta name="description" content="原题地址:https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;reverse-only-letters&#x2F;   思路: 双指针, 可以先将特殊字符放到新的数组, 然后遍历, 依次将空白填上即可.  12345678910111213141516171819202122class Solution &amp;#123;    public String reverseOnlyLetters(St">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode每日一题1725. 可以形成最大正方形的矩形数目, 遍历">
-<meta property="og:url" content="https://interestingblog.top/2022/02/04/leetcode1725/index.html">
+<meta property="og:title" content="LeetCode917. 仅仅反转字母">
+<meta property="og:url" content="https://interestingblog.top/2022/02/23/leetcode917/index.html">
 <meta property="og:site_name" content="ZhangYutong">
-<meta property="og:description" content="1234567891011121314151617class Solution &amp;#123;    public int countGoodRectangles(int[][] rectangles) &amp;#123;        int max &#x3D; Math.min(rectangles[0][0], rectangles[0][1]);        int total &#x3D; 0;">
+<meta property="og:description" content="原题地址:https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;reverse-only-letters&#x2F;   思路: 双指针, 可以先将特殊字符放到新的数组, 然后遍历, 依次将空白填上即可.  12345678910111213141516171819202122class Solution &amp;#123;    public String reverseOnlyLetters(St">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ed24e19204841f59ea20b6ae5e0344e~tplv-k3u1fbpfcp-watermark.image">
-<meta property="article:published_time" content="2022-02-04T06:19:05.000Z">
-<meta property="article:modified_time" content="2022-02-17T14:47:06.340Z">
+<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c956afd848534175bc5bc90308bec827~tplv-k3u1fbpfcp-watermark.image">
+<meta property="article:published_time" content="2022-02-23T12:38:06.000Z">
+<meta property="article:modified_time" content="2022-02-23T12:38:31.954Z">
 <meta property="article:author" content="ZhangYutong">
+<meta property="article:tag" content="双指针">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ed24e19204841f59ea20b6ae5e0344e~tplv-k3u1fbpfcp-watermark.image">
+<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c956afd848534175bc5bc90308bec827~tplv-k3u1fbpfcp-watermark.image">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://interestingblog.top/2022/02/04/leetcode1725/index.html">
+  <link rel="canonical" href="https://interestingblog.top/2022/02/23/leetcode917/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ZhangYutong" type="application/atom+xml">
   
@@ -331,14 +332,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-leetcode1725" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-leetcode917" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode每日一题1725. 可以形成最大正方形的矩形数目, 遍历
+      LeetCode917. 仅仅反转字母
     </h1>
   
 
@@ -346,8 +347,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/02/04/leetcode1725/" class="article-date">
-	  <time datetime="2022-02-04T06:19:05.000Z" itemprop="datePublished">2022-02-04</time>
+	<a href="/2022/02/23/leetcode917/" class="article-date">
+	  <time datetime="2022-02-23T12:38:06.000Z" itemprop="datePublished">2022-02-23</time>
 	</a>
 </span>
         
@@ -357,6 +358,11 @@
   </span>
 
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag">双指针</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -367,16 +373,18 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/04/leetcode1725/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/02/23/leetcode917/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6ed24e19204841f59ea20b6ae5e0344e~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">countGoodRectangles</span><span class="params">(<span class="type">int</span>[][] rectangles)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> Math.min(rectangles[<span class="number">0</span>][<span class="number">0</span>], rectangles[<span class="number">0</span>][<span class="number">1</span>]);</span><br><span class="line">        <span class="type">int</span> <span class="variable">total</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span>[] rectangle : rectangles) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">min</span> <span class="operator">=</span> Math.min(rectangle[<span class="number">0</span>], rectangle[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">if</span> (max &lt; min) &#123;</span><br><span class="line">                max = min;</span><br><span class="line">                total = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (max == min)&#123;</span><br><span class="line">                total ++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> total;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>思路: 查询每个数组里最小的数值, 因为矩形切割为正方形肯定是以最小的边为边. 遍历时记录目前的最大值 max 并记录出现次数 total, 如果发现又出现更大的边, 则清空次数 total, 最后返回最大边出现次数 total</strong></p>
+        <p>原题地址:<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-only-letters/">https://leetcode-cn.com/problems/reverse-only-letters/</a></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c956afd848534175bc5bc90308bec827~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<blockquote>
+<p>思路: 双指针, 可以先将特殊字符放到新的数组, 然后遍历, 依次将空白填上即可.</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">reverseOnlyLetters</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        <span class="type">char</span>[] result = <span class="keyword">new</span> <span class="title class_">char</span>[s.length()];</span><br><span class="line">        <span class="type">char</span>[] charArray = s.toCharArray();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; charArray.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (charArray[i] &lt; <span class="number">65</span> || (charArray[i] &gt; <span class="number">90</span> &amp;&amp; charArray[i] &lt; <span class="number">97</span>) || charArray[i] &gt; <span class="number">122</span>) &#123;</span><br><span class="line">                result[i] = charArray[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = charArray.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; charArray.length) &#123;</span><br><span class="line">            <span class="keyword">if</span> (result[i] != <span class="string">&#x27;\u0000&#x27;</span>) &#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (charArray[j] &lt; <span class="number">65</span> || (charArray[j] &gt; <span class="number">90</span> &amp;&amp; charArray[j] &lt; <span class="number">97</span>) || charArray[j] &gt; <span class="number">122</span>) &#123;</span><br><span class="line">                j--;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                result[i++] = charArray[j--];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -386,7 +394,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://interestingblog.top/2022/02/04/leetcode1725/" title="LeetCode每日一题1725. 可以形成最大正方形的矩形数目, 遍历" target="_blank" rel="external">https://interestingblog.top/2022/02/04/leetcode1725/</a>
+      <a href="https://interestingblog.top/2022/02/23/leetcode917/" title="LeetCode917. 仅仅反转字母" target="_blank" rel="external">https://interestingblog.top/2022/02/23/leetcode917/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -432,13 +440,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/02/06/leetcode1748/" title="LeetCode每日一题1748. 唯一元素的和"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/02/03/leetcode1414/" title="LeetCode每日一题1414. 和为 K 的最少斐波那契数字数目"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/02/21/leetcode-jz09/" title="LeetCode剑指Offer09.用两个栈实现队列"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
