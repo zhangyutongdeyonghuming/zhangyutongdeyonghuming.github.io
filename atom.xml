@@ -6,7 +6,7 @@
   <link href="https://interestingblog.top/atom.xml" rel="self"/>
   
   <link href="https://interestingblog.top/"/>
-  <updated>2022-02-25T13:10:34.385Z</updated>
+  <updated>2022-03-01T13:21:06.376Z</updated>
   <id>https://interestingblog.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux环境下打包SpringBootJar到Docker镜像</title>
+    <link href="https://interestingblog.top/2022/03/01/jartodocker/"/>
+    <id>https://interestingblog.top/2022/03/01/jartodocker/</id>
+    <published>2022-03-01T13:19:12.000Z</published>
+    <updated>2022-03-01T13:21:06.376Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文讲述如何将一个 jar 包构建为 docker 镜像, 首先保证服务器拥有 docker 环境</p></blockquote><h1 id="1-先准备一个-SpringBoot-构建的-jar-包-这里我的名字为-admin-0-0-1-SNAPSHOT-jar"><a href="#1-先准备一个-SpringBoot-构建的-jar-包-这里我的名字为-admin-0-0-1-SNAPSHOT-jar" class="headerlink" title="1. 先准备一个 SpringBoot 构建的 jar 包, 这里我的名字为 admin-0.0.1-SNAPSHOT.jar"></a>1. 先准备一个 SpringBoot 构建的 jar 包, 这里我的名字为 admin-0.0.1-SNAPSHOT.jar</h1><blockquote><p>将 jar 包先放到 linux 下, 我放到&#x2F;opt&#x2F;docker 下</p></blockquote><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1dbe86f29ff3456094361dbb71156f48~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><h1 id="2-编写-Dockerfile"><a href="#2-编写-Dockerfile" class="headerlink" title="2. 编写 Dockerfile"></a>2. 编写 Dockerfile</h1><blockquote><p>在&#x2F;opt&#x2F;docker (我的 jar 包所在目录)使用 shell 命令创建 Dockerfile 文件并打开编写.</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 基础环境</span><br><span class="line">FROM java:8</span><br><span class="line"></span><br><span class="line"># 将admin-0.0.1-SNAPSHOT.jar 添加到容器中</span><br><span class="line">ADD admin-0.0.1-SNAPSHOT.jar admin.jar</span><br><span class="line"></span><br><span class="line"># 启动容器命令</span><br><span class="line">ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;admin.jar&quot;]</span><br><span class="line"></span><br><span class="line"># 暴露端口, 我的web端口是9696, 根据需要修改</span><br><span class="line">EXPOSE 9696</span><br></pre></td></tr></table></figure><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6e1067d93d9a4571aeba6d959d56c698~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><h1 id="3-构建容器"><a href="#3-构建容器" class="headerlink" title="3. 构建容器"></a>3. 构建容器</h1><blockquote><p>在&#x2F;opt&#x2F;docker (我的 jar 包所在目录) 执行命令 <strong>docker build -t admin&#x2F;admin:1.0.0 .</strong>, 注意命令最后还有一个点, 不能丢失.</p></blockquote><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/df8525e91021474b9eb7de4af859de4b~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e88e41698f2c49a8b91c3ca08344f851~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><blockquote><p>这时已经看到了我们的镜像</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 我用镜像id启动容器, -d为后台运行, -p为主机端口映射</span><br><span class="line">docker run -d -p 9696:9696 360ffc4ef43e</span><br><span class="line"></span><br><span class="line">docker logs 875ae9a1acf6929bced1dd23fe04d6dccc189401a2414980335f138e68c2e68b</span><br></pre></td></tr></table></figure><blockquote><p>查看日志发现已经启动了, 在电脑上访问下.</p></blockquote><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b62bd8d7232142e486c62ddc4d3e720a~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19366efc901e4e51b54370d9f2152c35~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><blockquote><p>因为项目设置了全局 token 的验证, 所以返回了 json 报错, 不过证明已经启动成功了. 从 jar 打包到 docker 镜像就是这么个流程了</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文讲述如何将一个 jar 包构建为 docker 镜像, 首先保证服务器拥有 docker 环境&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-先准备一个-SpringBoot-构建的-jar-包-这里我的名字为-admin-0-0-1</summary>
+      
+    
+    
+    
+    <category term="后端" scheme="https://interestingblog.top/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Docker" scheme="https://interestingblog.top/tags/Docker/"/>
+    
+    <category term="SpringBoot" scheme="https://interestingblog.top/tags/SpringBoot/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode539.复数乘法</title>
